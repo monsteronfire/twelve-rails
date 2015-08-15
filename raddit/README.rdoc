@@ -1,6 +1,7 @@
 == README
 
-This is the README file for twelve. There is nothing to see here for now.
+This README would normally document whatever steps are necessary to get the
+application up and running.
 
 Things you may want to cover:
 
