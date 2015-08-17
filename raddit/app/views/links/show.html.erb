@@ -28,6 +28,8 @@
   <% end %>
 </div>
 
+<h1><a href="<%= @link.url %>"><%= @link.title %></a><br> <small>Submitted by <%= @link.user.name %></small></h1>
+
 <h3 class="comments_title">
   <%= @link.comments.count %> Comments
 </h3>
