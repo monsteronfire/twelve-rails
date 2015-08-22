@@ -3,25 +3,20 @@ Inspired by this guy: https://mackenziechild.me , I have decided to follow his s
 
 ######raddit
 - a reddit clone with a funny name
-
-[Tutorial](https://mackenziechild.me/12-in-12/1/)
+- [Tutorial](https://mackenziechild.me/12-in-12/1/)
 
 ######blarg
 - a blog with a funny name
-
 [Tutorial](https://mackenziechild.me/12-in-12/2/)
 
 ######recipebix
 - a recipe box with a funny name
-
-[Tutorial](https://mackenziechild.me/12-in-12/3/)
+- [Tutorial](https://mackenziechild.me/12-in-12/3/)
 
 ######pantrust
 - a pinterest clone with a funny name
-
-[Tutorial](https://mackenziechild.me/12-in-12/4/)
+- [Tutorial](https://mackenziechild.me/12-in-12/4/)
 
 ######moofie
 - a movie review app with a funny name
-
-[Tutorial](https://mackenziechild.me/12-in-12/5/)
+- [Tutorial](https://mackenziechild.me/12-in-12/5/)
