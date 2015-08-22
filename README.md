@@ -7,7 +7,7 @@ Inspired by this guy: https://mackenziechild.me , I have decided to follow his s
 
 ######blarg
 - a blog with a funny name
-[Tutorial](https://mackenziechild.me/12-in-12/2/)
+- [Tutorial](https://mackenziechild.me/12-in-12/2/)
 
 ######recipebix
 - a recipe box with a funny name
