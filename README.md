@@ -20,3 +20,7 @@ Inspired by this guy: https://mackenziechild.me , I have decided to follow his s
 ######moofie
 - a movie review app with a funny name
 - [Tutorial](https://mackenziechild.me/12-in-12/5/)
+
+######todolittle
+- a todo list app with a funny name
+- [Tutorial](https://mackenziechild.me/12-in-12/6/)
