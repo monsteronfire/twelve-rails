@@ -1,6 +1,6 @@
 class TodoItemsController < ApplicationController
   before_action :set_todo_list
-  before_action :set_todo_item except: [:create]
+  before_action :set_todo_item, except: [:create]
 
   def create
     @todo_item = @todo_list.todo_items.create(todo_item_params)
@@ -8,8 +8,8 @@ class TodoItemsController < ApplicationController
     redirect_to @todo_list
   end
 
-  def destory
-    if @todo_item.destory
+  def destroy
+    if @todo_item.destroy
       flash[:success] = "Todo list item was deleted."
     else
       flash[:error] = "Todo list item could not be deleted."
