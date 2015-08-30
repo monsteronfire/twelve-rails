@@ -31,4 +31,5 @@ Inspired by this guy: https://mackenziechild.me , I have decided to follow his s
 
 ######weightrack
 - a workout log app with a funny name
+- took some liberties here; modified functionality and used slim instead of haml
 - [Tutorial](https://mackenziechild.me/12-in-12/8/)
