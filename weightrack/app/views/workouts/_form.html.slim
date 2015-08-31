@@ -1,5 +1,5 @@
 = simple_form_for(@workout, class: 'form-horizontal') do |f|
-  = f.input :date, placeholder: "Date", class: 'form-control'
+  = f.input :date, label: "Date"
   = f.input :workout, placeholder: "What workout did you do?", class: 'form-control'
   = f.input :length, placeholder: "Length", class: 'form-control'
   = f.submit
