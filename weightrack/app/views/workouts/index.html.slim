@@ -1,6 +1,6 @@
-h1 Index
+h1 Workouts
 
 - @workouts.each do |workout|
-  p = link_to workout.date, workout
+  p = link_to workout.date.strftime("%A %d %b %Y"), workout
   p = workout.workout
   p = workout.length
