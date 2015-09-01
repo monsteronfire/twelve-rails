@@ -7,12 +7,26 @@ html
     = csrf_meta_tags
 
   body
-    .nav.navbar.navbar-default
+    nav.navbar.navbar-default
       .container
-        .navbar-header
-          = link_to 'Workout Log', root_path, class: 'navbar-brand'
-        .nav.navbar-nav.navbar-right
-          = link_to 'New Workout', new_workout_path, class: 'navbar navbar-link'
+        .navbar-brand
+          = link_to 'Weightrack', root_path
+
+        - if user_signed_in?
+          - if current_user.admin?
+            ul.nav.navbar-nav.navbar-right
+              li = link_to 'New Workout', new_workout_path
+              li = link_to 'Account', edit_user_registration_path
+              li = link_to 'Sign Out', destroy_user_session_path, method: :destroy
+
+        - else
+          ul.nav.navbar-nav.navbar-right
+            li = link_to 'Sign Up', new_user_registration_path
+            li = link_to 'Sign In', new_user_session_path
 
     .container
+      .row.main
+          .notice
+            .inner-notice
+              =render 'layouts/flash'
       = yield
