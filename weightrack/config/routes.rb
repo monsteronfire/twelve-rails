@@ -5,5 +5,7 @@ Rails.application.routes.draw do
     resources :exercises
   end
 
+  # resources :profiles, only: [:edit]
+
   root 'workouts#index'
 end
