@@ -1,5 +1,5 @@
 - @articles.each do |article|
-  h2= article.title
+  h2= link_to article.title, article
   p= article.created_at.strftime("%A %d %b %Y")
   p= truncate(article.content, length: 200)
 
