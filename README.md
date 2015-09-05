@@ -41,4 +41,7 @@ Inspired by this guy: https://mackenziechild.me , I have decided to follow his s
 
 ######yowlat
 - a forum app with a funny name
+- took some liberties here; followed the tutorial, loosely
+- used slim and bootstrap instead of haml
+- used the better_errors gem
 - [Tutorial](https://mackenziechild.me/12-in-12/10/)
