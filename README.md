@@ -45,3 +45,7 @@ Inspired by this guy: https://mackenziechild.me , I have decided to follow his s
 - used slim and bootstrap instead of haml
 - used the better_errors gem
 - [Tutorial](https://mackenziechild.me/12-in-12/10/)
+
+######notebook
+- a notebook app with a regular name
+- [Tutorial](https://mackenziechild.me/12-in-12/11/)
