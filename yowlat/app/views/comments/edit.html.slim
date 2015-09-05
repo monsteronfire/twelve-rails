@@ -1,0 +1,5 @@
+h2 Edit Reply
+
+= simple_form_for([@post, @comment]) do |f|
+  = f.input :comment
+  = f.button :submit, class: "btn btn-default"
