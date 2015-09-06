@@ -49,3 +49,7 @@ Inspired by this guy: https://mackenziechild.me , I have decided to follow his s
 ######notebook
 - a notebook app with a regular name
 - [Tutorial](https://mackenziechild.me/12-in-12/11/)
+
+######acutekitten
+- a cute kitten image uploading app with an appropriate name
+- [Tutorial](https://mackenziechild.me/12-in-12/12/)
