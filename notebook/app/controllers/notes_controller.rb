@@ -3,20 +3,19 @@ class NotesController < ApplicationController
 
   def index
     @notes = Note.all.order("created_at DESC")
+    @notes = Note.where(user_id: current_user)
   end
 
   def show
   end
 
   def new
-    # @note = current_user.notes.build
-    @note = Note.new
+    @note = current_user.notes.build
   end
 
   def create
-    # @note = current_user.notes.build(note_params)
+    @note = current_user.notes.build(note_params)
 
-    @note = Note.new(note_params)
     if @note.save
       redirect_to @note
     else
@@ -28,9 +27,16 @@ class NotesController < ApplicationController
   end
 
   def update
+    if @note.update(note_params)
+      redirect_to @note
+    else
+      render 'edit'
+    end
   end
 
   def destory
+    @note.destroy
+    redirect_to notes_path
   end
 
   private
