@@ -52,4 +52,7 @@ Inspired by this guy: https://mackenziechild.me , I have decided to follow his s
 
 ######acutekitten
 - a cute kitten image uploading app with an appropriate name
+- used slim and bootstrap instead of haml
+- used refile instead of paperclip
+- used the better_errors gem
 - [Tutorial](https://mackenziechild.me/12-in-12/12/)
