@@ -1,7 +1,11 @@
 p= @post.title
+= image_tag attachment_url(@post, :image, :fill, 300, 300, format: "jpg")
 p= @post.description
 p= @post.user.name
-= image_tag attachment_url(@post, :image, :fill, 300, 300, format: "jpg")
+
+#comment
+  h2.comment_count = pluralize(@post.comments.count, "Comment")
+
 
 = link_to "Back", root_path, class: "btn btn-default"
 = link_to "Edit", edit_post_path(@post), class: "btn btn-default"

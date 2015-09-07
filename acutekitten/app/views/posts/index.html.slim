@@ -1,9 +1,9 @@
 - @posts.each do |post|
   h2= link_to post.title, post
+  = image_tag attachment_url(post, :image, :fill, 300, 300, format: "jpg")
   p= post.created_at.strftime("%A %d %b %Y")
   p= truncate(post.description, length: 200)
   p= post.user.name
-  = image_tag attachment_url(post, :image, :fill, 300, 300, format: "jpg")
 
 - if user_signed_in?
   = link_to "New Post", new_post_path
