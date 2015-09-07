@@ -1,1 +1,8 @@
-h2 index.html.slim
+- @posts.each do |post|
+  h2= link_to post.title, post
+  p= post.created_at.strftime("%A %d %b %Y")
+  p= truncate(post.description, length: 200)
+  p= post.user.name
+
+- if user_signed_in?
+  = link_to "New Post", new_post_path
