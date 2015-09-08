@@ -7,6 +7,12 @@
   p= post.created_at.strftime("%A %d %b %Y")
   p= truncate(post.description, length: 200)
   p= post.user.name
+  p
+    =post.get_likes.size
+    | Likes
+  p
+    =post.get_dislikes.size
+    | Dislikes
 
 - if user_signed_in?
   = link_to "New Post", new_post_path
