@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150901161122) do
+ActiveRecord::Schema.define(version: 20150909115344) do
 
   create_table "exercises", force: :cascade do |t|
     t.string   "name"
@@ -46,6 +46,15 @@ ActiveRecord::Schema.define(version: 20150901161122) do
 
   add_index "users", ["email"], name: "index_users_on_email", unique: true
   add_index "users", ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
+
+  create_table "weights", force: :cascade do |t|
+    t.integer  "measurement"
+    t.integer  "user_id"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+  end
+
+  add_index "weights", ["user_id"], name: "index_weights_on_user_id"
 
   create_table "workouts", force: :cascade do |t|
     t.datetime "date"
