@@ -1,0 +1,4 @@
+= simple_form_for(@weight, class: 'form-horizontal') do |f|
+  = f.date_select :date, label: "Date"
+  = f.input :weight, placeholder: "Weight", class: 'form-control'
+  = f.submit
