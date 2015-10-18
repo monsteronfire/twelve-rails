@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'welcome/index'
+
   resources :posts do
     member do
       get "like", to: "posts#upvote"
@@ -9,5 +11,9 @@ Rails.application.routes.draw do
   
   devise_for :users
 
-  root 'posts#index'
+  authenticated :user do
+    root "posts#index", as: "authenticated_root"
+  end
+
+  root 'welcome#index'
 end
