@@ -17,7 +17,7 @@
             = post.created_at.strftime("%A %d %b %Y")
           
           p
-            = truncate(post.description, length: 100)
+            = truncate(post.description, length: 200)
 
           p
             = post.comments.count 
