@@ -1,6 +1,6 @@
 .container.post-wrapper
   - if user_signed_in?
-      = link_to "New Post", new_post_path, class: "btn  btn-default"
+      = link_to "Add An Acute Kitten", new_post_path, class: "btn  btn-default"
   ul.post-list
     - @posts.each do |post|
       li
