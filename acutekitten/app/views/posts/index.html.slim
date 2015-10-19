@@ -1,20 +1,32 @@
 .container.post-wrapper
   - if user_signed_in?
       = link_to "Add An Acute Kitten", new_post_path, class: "btn  btn-default"
-  ul.post-list
+  #posts.transitions-enabled
     - @posts.each do |post|
-      li
-        h2= link_to post.title, post
+      .box.panel.panel-default
         = image_tag attachment_url(post, :image, :fill, 300, 300, format: "jpg")
-        p
-          = post.comments.count 
-          | Comments
-        p= post.created_at.strftime("%A %d %b %Y")
-        p= truncate(post.description, length: 200)
-        p= post.user.name
-        p
-          =post.get_likes.size
-          | Likes
-        p
-          =post.get_dislikes.size
-          | Dislikes
+        h2= link_to post.title, post
+        
+        .panel-body
+          p
+            | Submitted by 
+            = post.user.name
+            
+          p
+            | on 
+            = post.created_at.strftime("%A %d %b %Y")
+          
+          p
+            = truncate(post.description, length: 100)
+
+          p
+            = post.comments.count 
+            |  Comments
+
+          p
+            =post.get_likes.size 
+            i.fa.fa-thumbs-up
+
+          p
+            =post.get_dislikes.size
+            i.fa.fa-thumbs-down
